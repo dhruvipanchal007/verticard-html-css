@@ -98,7 +98,10 @@ section {
   padding: 12px 15px;
   box-sizing: border-box;
 }
-
+a{
+  text-decoration: none;
+  color:#6c6d6e;
+}
 .box:hover {
   color: #0299cc;
   cursor: pointer;
@@ -119,6 +122,10 @@ section {
   transition: all ease 0.3s;
   background-color: #0299cc;
 }
+.box:hover > a{
+  transition: all ease 0.3s;
+color: #0299cc;
+}
 .first-word {
   color: #0299cc;
   background-color: #0299cc;
@@ -126,6 +133,7 @@ section {
 .first-line {
   color: #0299cc;
 }
+
 .footer {
   font-size: 1rem;
   color: #9a9b9c;
@@ -265,7 +273,8 @@ h2 {
   max-width: 380px;
   display: block;
 }
-input[type='text'] {
+
+.form-control{
   border: none;
   padding: 6px 12px;
   font-size: 1rem;
@@ -273,8 +282,27 @@ input[type='text'] {
   color: rgb(73, 80, 87);
   border-bottom: 1px solid rgb(206, 212, 218);
 }
+.form-control:focus{
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
 
-@media screen and (max-width: 400px) {
+.btn{
+  margin-left: 280px;
+  background-color: #9999CC;
+  font-size: 1.1rem;
+  padding: 10px 35px;
+  text-align: center;
+  color: #f2f2f2;
+  border: none;
+}
+.btn:hover{
+  background-color: #9a9afc;
+}
+@media screen and (max-width: 946px) {
   .list {
     position: relative;
     right: 0;
